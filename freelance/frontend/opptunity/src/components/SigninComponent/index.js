@@ -8,7 +8,7 @@ const SigninComponent = () => {
   const [loginstate,setLoginstate]=useState('')
   async function login() {
     try {
-      const response = await axios.post('http://freelance-backend:8000/api/signin',{
+      const response = await axios.post('http://backend:8000/api/signin',{
         "email":email,
         "password":password
       });
