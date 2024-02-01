@@ -11,7 +11,7 @@ const SignupComponent = () => {
   async function signup() {
     console.log(email,password,name)
     try {
-      const response = await axios.post('http://freelance-backend:8000/api/signup',
+      const response = await axios.post('http://backend:8000/api/signup',
       {
         "name":name,
         "email":email,
